@@ -1,0 +1,54 @@
+{% extends "layout.html"%}
+
+
+{% block body %}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col md-12">
+            <h1>Cricket Tournament Details</h1>
+            <table class="table table-striped">
+                <tr>
+              
+              <th>Match List </th>
+              <th>Team Details </th>
+              <th>Winner</th>
+              <th>Looser</th>
+              <th>Man of Match</th>
+              <th>Best Bowler</th>
+              <th>Best Fielder </th>
+              <th>Run</th>
+              <th>Wickets</th>
+              <th>Overs</th>
+              <th>Action</th>
+          </tr>
+                {% for row in league %}
+                <tr>
+                    <td>{{row.9}}</td>
+                    <td>{{row.10}}</td>
+                    <td>{{row.11}}</td>
+                    <td>{{row.12}}</td>
+                    <td>{{row.13}}</td>
+                    <td>{{row.14}}</td>
+                    <td>{{row.15}}</td>
+                    <td>{{row.16}}</td>
+                    <td>{{row.17}}</td>
+                    <td>{{row.18}}</td>
+                    
+                    
+                    
+                    <td>
+                <a href="/delete/{{ row.0 }}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure For Delete?')">Delete</a>
+                    </td>
+                </tr>
+      </div>
+   </div>
+</div>
+                           {% endfor  %}
+            </table>
+        </div>
+{% endblock %}
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>

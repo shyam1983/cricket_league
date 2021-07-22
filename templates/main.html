@@ -1,0 +1,84 @@
+{%extends "layout.html" %}
+{%block body%}
+
+<div class="container"><br>
+  <h1>ADD DETAILS</h1>
+    <form action="{{ url_for('main') }}" method="POST">
+        <div class="form-group">
+         Countries: <input type ="text" name="country" class= "form-control" palceholder="Country" required>
+         </div>
+         <div class="form-group">
+         Team: <input type ="text" name="teams" class= "form-control" palceholder="Team" required>
+           </div>
+          <div class="form-group">
+          Venue: <input type ="text" name="venue" class= "form-control" palceholder="venue" required>
+          </div>
+          <div class="form-group">
+          Results: <input type ="text" name="result" class= "form-control" palceholder="Results" required>
+          </div>
+         Players:
+         <div class="form-group">
+         Name: <input type ="text" name="pname" class= "form-control" palceholder="Name" required>
+         </div>
+         <div class="form-group">
+          DOB: <input type ="date" name="dob" class= "form-control" palceholder="DOB" required>
+          </div>
+         <div class="form-group">
+          Bowler or Batsman: <input type ="text" name="bob" class= "form-control" palceholder="Batsman OR Bowler" required>
+         </div>
+         <div class="form-group">
+         Country Belongs To: <input type ="text" name="pcountry" class= "form-control" palceholder="Country" required>
+         </div>
+         
+         Matches:
+         <div class="form-group">
+         * List of Matches: <input type ="text" name="mlist" class= "form-control" palceholder="List of Matches" required>
+         </div>
+         * Match Summary:
+         <div class="form-group">
+         Team Details: <input type ="text" name="teamd" class= "form-control" palceholder="team" required>
+         </div>
+         <div class="form-group">
+         Winner: <input type ="text" name="winner" class= "form-control" palceholder="winner" required>
+         </div>
+         <div class="form-group">
+         Looser: <input type ="text" name="looser" class= "form-control" palceholder="looser" required>
+         </div>
+         <div class="form-group">
+         Man of the Match: <input type ="text" name="mm" class= "form-control" palceholder="Y or N" required>
+         </div>
+         <div class="form-group">
+         Bowler of the Match: <input type ="text" name="mb" class= "form-control" palceholder="Y or N" required>
+         </div>
+         <div class="form-group">
+         Best Fielder: <input type ="text" name="fb" class= "form-control" palceholder="Y or N" required>
+         </div>
+         
+         
+         Tournament Score Table: 
+         <div class="form-group">
+         Runs: <input type ="number" name="run" class= "form-control" palceholder="Runs" required>
+         </div>
+         <div class="form-group">
+         Wickets: <input type ="number" name="wkt" class= "form-control" palceholder="Wickets" required>
+         </div>
+         <div class="form-group">
+         Overs: <input type ="number" name="overs" class= "form-control" palceholder="Overs" required>
+         </div>
+         <div class="form-group">
+          <input class="btn btn-primary" type ="submit"></input>
+         </div>
+    </form>
+    
+</div>
+
+{%endblock%}
+
+
+
+
+
+
+
+
+

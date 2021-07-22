@@ -1,0 +1,58 @@
+{%extends "layout.html" %}
+{%block body%}
+
+<div class="container">
+    <h1>UPDATE DETAILS</h1>
+    <form action="{{ url_for('update') }}" method="POST">
+      <div class="form-group">
+         
+         Players:
+         <div class="form-group">
+         Name: <input type ="text" name="pname" class= "form-control" palceholder="Name" required>
+         </div>
+         <div class="form-group">
+          DOB: <input type ="date" name="dob" class= "form-control" palceholder="DOB" required>
+          </div>
+         <div class="form-group">
+          Bowler or Batsman: <input type ="text" name="bob" class= "form-control" palceholder="Batsman OR Bowler" required>
+         </div>
+         <div class="form-group">
+         Country Belongs To: <input type ="text" name="pcountry" class= "form-control" palceholder="Country" required>
+         </div>
+         
+         Matches:
+         <div class="form-group">
+         1.List of Matches: <input type ="text" name="mlist" class= "form-control" palceholder="List of Matches" required>
+         </div>
+         2.Match Summary:
+         <div class="form-group">
+         Team Details: <input type ="text" name="teamd" class= "form-control" palceholder="team" required>
+         </div>
+         <div class="form-group">
+         Winner: <input type ="text" name="winner" class= "form-control" palceholder="winner" required>
+         </div>
+         <div class="form-group">
+         Looser: <input type ="text" name="looser" class= "form-control" palceholder="looser" required>
+         </div>
+         <div class="form-group">
+         Man of the Match: <input type ="text" name="mm" class= "form-control" palceholder="Y or N" required>
+         </div>
+         <div class="form-group">
+         Bowler of the Match: <input type ="text" name="mb" class= "form-control" palceholder="Y or N" required>
+         </div>
+         <div class="form-group">
+         Best Fielder: <input type ="text" name="fb" class= "form-control" palceholder="Y or N" required>
+         </div>
+         
+         
+         
+         <div class="form-group">
+          <input class="btn btn-primary" type ="submit"></input>
+         </div>
+         
+    </form>
+</div>
+
+{%endblock%}
+
+
